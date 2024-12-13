@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@100;300;400;500;700;900&family=Varela+Round&display=swap');
+body{
+    font-family: "Roboto", serif;
+    font-style: normal;
+    background-color:#ddd;
+}
+.testimonial{
+    height: 100vh;
+}
+.testimonial .header{
+    font-size: 36px;
+    text-align: center;
+    padding-block-start:4rem ;
+}
+.underline{
+    width: 70px;
+    margin: .5rem auto;
+    border: 2px solid red;
+}
+.cards{
+    display: flex;
+    padding: 3rem;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0rem 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,0.3);
+}
+.card img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.card .title{
+    font-size: 20px;
+    margin-block: 1rem;
+}
+.ratings{
+    margin-block-end: 1rem;
+    color: #f50;
+}
+.info{
+    line-height: 1.4;
+    color: #888;
+}
+/* Tablet */
+@media screen and (max-width:900px) {
+    .cards{
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+    }
+    .cards .card{
+        flex-direction: column;
+        margin: 2rem 0rem;
+    }
+    
+}
+/* Mobile */
+@media screen and (max-width:600px) {
+    .cards{
+        flex-direction: column;
+    }
+    .cards .card{
+        flex-direction: column;
+        padding: 0rem;
+        margin: 2rem 0rem;
+    }
+    .info{
+        padding: 2rem;
+    }
+  
+}
